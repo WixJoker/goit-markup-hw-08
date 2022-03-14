@@ -1,0 +1,30 @@
+.clients-item {
+  display: inline-flex;
+
+  &__client-box {
+    margin-right: 30px;
+    width: 170px;
+    height: 92px;
+  }
+  &__client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $client-logo-color;
+    padding: 16px 32px;
+    color: $client-logo-color;
+
+    transition: color 250ms $timing-function, border-color 250ms $timing-function;
+  }
+  &__client-link:hover,
+  &__client-link:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+  &__client-box:last-child {
+    margin-right: 0;
+  }
+  &__client-logo {
+    fill: currentColor;
+  }
+}
