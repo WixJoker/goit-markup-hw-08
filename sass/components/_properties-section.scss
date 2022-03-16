@@ -15,7 +15,14 @@
   padding-bottom: 0;
 }
 .properties {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 30px;
+  }
+  @media screen and (min-width: 1140px) {
+  }
 }
 .properties__item {
   width: 270px;
