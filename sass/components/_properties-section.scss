@@ -1,10 +1,20 @@
 .properties__icon-box {
   width: 100%;
-  height: 120px;
   background-color: $section-background-color;
   margin-bottom: 30px;
   margin-right: 30px;
   padding: 25px 100px;
+
+  @media screen and (min-width: $tablet) and (max-width: 1139px) {
+    & {
+      padding: 25px 142px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    & {
+      padding: 25px 190px;
+    }
+  }
 }
 .properties__icon {
   width: 70px;
@@ -15,22 +25,49 @@
   padding-bottom: 0;
 }
 .properties {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    width: calc((100% - 2 * 30px) / 2);
-    margin: 30px;
+  @media (min-width: $tablet) and (max-width: 1139px) {
+    & {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
-  @media screen and (min-width: 1140px) {
+  @media (min-width: $desktop) {
+    & {
+      display: flex;
+    }
   }
 }
 .properties__item {
-  width: 270px;
-  justify-content: space-between;
-  margin-right: 30px;
+  width: 450px;
+  justify-content: center;
 
-  &:last-child {
-    margin-right: 0;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $tablet) and (max-width: 1139px) {
+    & {
+      width: 354px;
+      justify-content: space-between;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+    &:nth-child(2n + 2) {
+      margin-right: 0;
+    }
+    &:nth-child(n + 1) {
+      margin-right: 30px;
+    }
+  }
+  @media (min-width: $desktop) {
+    & {
+      width: 270px;
+      justify-content: space-between;
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 .properties__title {
@@ -44,6 +81,7 @@
   color: $title-color;
 }
 .properties__text {
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;

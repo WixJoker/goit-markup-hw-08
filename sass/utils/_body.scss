@@ -6,6 +6,10 @@ body {
 }
 html {
   box-sizing: border-box;
+  @media screen and (min-width: 320px) {
+    overflow-x: hidden;
+    min-width: 320px;
+  }
 }
 *,
 *::before,

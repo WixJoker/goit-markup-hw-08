@@ -12,6 +12,23 @@
 .web-word {
   color: $accent-color;
 }
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.menu-button .icon-close {
+  display: none;
+}
+.menu-button.is-open .icon-close {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
 .header {
   border-bottom: 1px solid $header-border-bottom-color;
   padding-top: 25px;

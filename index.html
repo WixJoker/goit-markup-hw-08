@@ -17,6 +17,9 @@
         <div class="container header__container">
             <nav class="site-nav">  
                 <a class="header__logo-text" href="#"><span class="web-word">Web</span>Studio</a>
+                <button type="button" class="menu-button is-open" data-menu-button><svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                    <use class="icon-close" href="./images/icons.svg#icon-close"></use></svg></button>
                 <ul class="header__links-list">
                     <li class="header__links-list-item"><a class="header__link studio header__link--current" href="./index.html">Студия</a></li>
                     <li class="header__links-list-item"><a class="header__link" href="./portfolio.html">Портфолио</a></li>
@@ -114,7 +117,7 @@
         </section>
         <!-- Чем мы занимаемся -->
         <section class="section">
-            <div class="container">
+            <div class="container reviews">
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="activities-images">
                     <li class="activities-images__item"><img src="./images/box1.jpg" alt="клавиатура" width="370" height="294"><div class="activities-text"><p>Десктопные приложения</p></div></li>
@@ -216,5 +219,6 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
