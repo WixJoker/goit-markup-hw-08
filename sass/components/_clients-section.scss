@@ -3,7 +3,6 @@
   flex-wrap: wrap;
 
   @media screen and (min-width: $tablet) and (max-width: 1139px) {
-    width: 226px;
     display: inline-flex;
     flex-wrap: wrap;
   }
@@ -12,17 +11,26 @@
   }
   &__client-box {
     margin-right: 30px;
-    width: 170px;
+    width: 210px;
     height: 92px;
+    &__client-box:nth-last-child(n + 5) {
+      margin-bottom: 0;
+    }
+    &__client-box:nth-child(2n + 2) {
+      margin-right: 0;
+    }
+    &__client-box:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
 
     @media screen and (min-width: $tablet) and (max-width: 1139px) {
       &__client-box {
         width: 226px;
       }
-      &__client-box:nth-last-child(-n + 2) {
+      &__client-box:nth-last-child(n + 4) {
         margin-bottom: 0;
       }
-      &__client-box:nth-child(2n + 2) {
+      &__client-box:nth-child(3n + 3) {
         margin-right: 0;
       }
       &__client-box:nth-child(n + 1) {
@@ -31,7 +39,10 @@
     }
     @media screen and (min-width: $desktop) {
       &__client-box {
-        width: 210px;
+        width: 170px;
+      }
+      &__client-box:nth-child(n + 1) {
+        margin-right: 30px;
       }
     }
   }
