@@ -4,6 +4,8 @@
 
   @media screen and (min-width: $tablet) and (max-width: 1139px) {
     width: 226px;
+    display: inline-flex;
+    flex-wrap: wrap;
   }
   @media screen and (min-width: $desktop) {
     flex-wrap: nowrap;
@@ -14,10 +16,23 @@
     height: 92px;
 
     @media screen and (min-width: $tablet) and (max-width: 1139px) {
-      width: 226px;
+      &__client-box {
+        width: 226px;
+      }
+      &__client-box:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+      &__client-box:nth-child(2n + 2) {
+        margin-right: 0;
+      }
+      &__client-box:nth-child(n + 1) {
+        margin-right: 30px;
+      }
     }
     @media screen and (min-width: $desktop) {
-      width: 210px;
+      &__client-box {
+        width: 210px;
+      }
     }
   }
   &__client-link {
