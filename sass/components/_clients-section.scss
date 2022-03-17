@@ -1,10 +1,24 @@
 .clients-item {
   display: inline-flex;
+  flex-wrap: wrap;
 
+  @media screen and (min-width: $tablet) and (max-width: 1139px) {
+    width: 226px;
+  }
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
   &__client-box {
     margin-right: 30px;
     width: 170px;
     height: 92px;
+
+    @media screen and (min-width: $tablet) and (max-width: 1139px) {
+      width: 226px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 210px;
+    }
   }
   &__client-link {
     display: flex;
@@ -22,7 +36,9 @@
     color: $accent-color;
   }
   &__client-box:last-child {
-    margin-right: 0;
+    @media screen and (min-width: $desktop) {
+      margin-right: 0;
+    }
   }
   &__client-logo {
     fill: currentColor;

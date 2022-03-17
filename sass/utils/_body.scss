@@ -4,6 +4,9 @@ body {
   background-color: $primary-background-color;
   color: $primary-text-color;
 }
+body.modal-open {
+  overflow: hidden;
+}
 html {
   box-sizing: border-box;
   @media screen and (min-width: 320px) {
