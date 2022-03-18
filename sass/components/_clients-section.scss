@@ -10,18 +10,21 @@
     flex-wrap: nowrap;
   }
   &__client-box {
-    margin-right: 30px;
     width: 210px;
     height: 92px;
     flex-basis: calc((100% - 2 * 30px) / 2);
-    &__client-box:nth-child(n + 5) {
+
+    &:nth-child(n + 5) {
       margin-bottom: 0;
     }
-    &__client-box:nth-child(2n + 2) {
+    &:nth-child(2n + 2) {
       margin-right: 0;
     }
-    &__client-box:nth-child(2n + 1) {
+    &:nth-child(2n + 1) {
       margin-right: 30px;
+    }
+    &:nth-child(-n + 4) {
+      margin-bottom: 30px;
     }
 
     @media screen and (min-width: $tablet) and (max-width: 1139px) {
@@ -47,7 +50,7 @@
         width: 170px;
         flex-basis: calc((100% - 6 * 30px) / 6);
       }
-      &__client-box:nth-child(n + 1) {
+      &__client-box:not(:last-child) {
         margin-right: 30px;
       }
     }
