@@ -28,29 +28,29 @@
     }
 
     @media screen and (min-width: $tablet) and (max-width: 1139px) {
-      &__client-box {
+      & {
         width: 226px;
         flex-basis: calc((100% - 3 * 30px) / 3);
       }
-      &__client-box:nth-child(1) {
+      &:nth-child(1) {
         margin-bottom: 30px;
       }
-      &__client-box:nth-child(n + 4) {
+      &:nth-child(n + 4) {
         margin-bottom: 0;
       }
-      &__client-box:nth-child(3n + 3) {
+      &:nth-child(3n + 3) {
         margin-right: 0;
       }
-      &__client-box:nth-child(n + 1) {
+      &:nth-child(n + 1) {
         margin-right: 30px;
       }
     }
     @media screen and (min-width: $desktop) {
-      &__client-box {
+      & {
         width: 170px;
         flex-basis: calc((100% - 6 * 30px) / 6);
       }
-      &__client-box:not(:last-child) {
+      &:not(:last-child) {
         margin-right: 30px;
       }
     }
