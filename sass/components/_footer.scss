@@ -4,15 +4,15 @@ footer {
 footer {
   margin-top: 0 px;
   margin-bottom: 0 px;
-  align-content: flex-start;
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 }
-.footer__container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
+// .footer__container {
+//   display: flex;
+//   align-items: baseline;
+//   justify-content: space-between;
+// }
 .footer__logo-text {
   display: inline-block;
   margin-bottom: 20px;
@@ -38,14 +38,17 @@ footer {
   transition: background-color 250ms $timing-function;
 }
 .footer__info-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
+}
+.footer__info-item:last-child {
+  margin-bottom: 60px;
 }
 .footer__contacts {
   color: rgba(255, 255, 255, 0.6);
 }
-.footer__social-media-box {
-  margin-right: 93px;
-}
+// .footer__social-media-box {
+//   margin-right: 93px;
+// }
 .footer__main-info {
   min-width: 240px;
 }
@@ -64,9 +67,10 @@ footer {
 }
 .footer__social-media-icons {
   display: inline-flex;
+  margin-bottom: 60px;
 }
 .footer__social-media-icons-link {
-  display: inline-flex;
+  // display: inline-flex;
   background-color: rgba(255, 255, 255, 0.1);
   width: 44px;
   height: 44px;
@@ -90,10 +94,9 @@ footer {
   fill: $primary-background-color;
 }
 .footer__form-box {
-  display: flex;
-
+  // display: flex;
   & input {
-    margin-right: 12px;
+    margin-bottom: 20px;
     min-width: 358px;
   }
 }
@@ -107,6 +110,8 @@ footer {
   border-radius: 4px;
   cursor: pointer;
   border: none;
+  margin-right: auto;
+  margin-left: auto;
 
   &:hover,
   &:focus {
