@@ -1,19 +1,19 @@
 .properties__icon-box {
   width: 100%;
   background-color: $section-background-color;
-  padding: 25px 190px;
+  // padding: 25px 190px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: $tablet) and (max-width: 1139px) {
-    & {
-      padding: 25px 142px;
-    }
-  }
-  @media screen and (min-width: $desktop) {
-    & {
-      padding: 25px 100px;
-    }
-  }
+  // @media screen and (min-width: $tablet) and (max-width: 1139px) {
+  //   & {
+  //     padding: 25px 142px;
+  //   }
+  // }
+  // @media screen and (min-width: $desktop) {
+  //   & {
+  //     padding: 25px 100px;
+  //   }
+  // }
 }
 .properties__icon {
   width: 70px;
@@ -42,7 +42,6 @@
   &:not(:last-child) {
     margin-bottom: 30px;
   }
-
   // @media screen and (min-width: $tablet) and (max-width: 1139px) {
   //   & {
   //     width: 354px;
@@ -74,7 +73,7 @@
   }
   @media (min-width: $desktop) {
     & {
-      width: 270px;
+      flex-basis: calc((100% - 4 * 30px) / 4);
     }
     &:not(:last-child) {
       margin-right: 30px;
