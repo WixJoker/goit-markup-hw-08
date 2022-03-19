@@ -65,10 +65,11 @@
   position: relative;
 }
 .site-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+  @media screen and (min-width: $tablet) and (max-width: 1139px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .header__link--current {
     color: $accent-color;
   }
