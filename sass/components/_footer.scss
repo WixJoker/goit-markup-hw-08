@@ -17,7 +17,9 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     flex-basis: calc((100% - 2 * 165px) / 2);
-    // justify-content: space-between;
+    @media screen and (min-width: $desktop) {
+      justify-content: space-between;
+    }
   }
   @media screen and (min-width: $desktop) {
     display: flex;
@@ -59,9 +61,11 @@ footer {
 .footer__contacts {
   color: rgba(255, 255, 255, 0.6);
 }
-// .footer__social-media-box {
-//   margin-right: 93px;
-// }
+.footer__social-media-box {
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
+}
 .footer__main-info {
   min-width: 240px;
 }
@@ -83,16 +87,17 @@ footer {
   margin-bottom: 60px;
 }
 .footer__social-media-icons-link {
-  // display: inline-flex;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 88px;
-  height: 88px;
+  width: 44px;
+  height: 44px;
   justify-content: center;
   border-radius: 50%;
   align-items: center;
 
   transition: background-color 250ms $timing-function;
-
+  @media screen and (min-width: $desktop) {
+    display: inline-flex;
+  }
   &:hover,
   &:focus {
     background-color: $accent-color;
@@ -102,14 +107,17 @@ footer {
   margin-right: 10px;
 }
 .footer__social-icon {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   fill: $primary-background-color;
 }
 .footer__form-box {
-  // display: flex;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
   & input {
     margin-bottom: 20px;
+    margin-right: 12px;
     min-width: 358px;
   }
 }

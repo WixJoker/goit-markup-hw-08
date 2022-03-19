@@ -284,18 +284,6 @@ textarea:hover {
           justify-content: space-between;
 }
 
-@media screen and (min-width: 768px) {
-  .menu-container__navigation {
-    margin-right: 150px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .menu-container__contacts {
-    margin-right: 0;
-  }
-}
-
 .site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1293,6 +1281,13 @@ footer {
         flex-basis: calc((100% - 330px) / 2);
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1139px) and (min-width: 1140px) {
+  .footer__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 @media screen and (min-width: 1140px) {
   .footer__container {
     display: -webkit-box;
@@ -1348,6 +1343,12 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 1140px) {
+  .footer__social-media-box {
+    margin-right: 93px;
+  }
+}
+
 .footer__main-info {
   min-width: 240px;
 }
@@ -1374,8 +1375,8 @@ footer {
 
 .footer__social-media-icons-link {
   background-color: rgba(255, 255, 255, 0.1);
-  width: 88px;
-  height: 88px;
+  width: 44px;
+  height: 44px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1386,6 +1387,13 @@ footer {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1140px) {
+  .footer__social-media-icons-link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
 .footer__social-media-icons-link:hover, .footer__social-media-icons-link:focus {
   background-color: #2196f3;
 }
@@ -1395,13 +1403,21 @@ footer {
 }
 
 .footer__social-icon {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   fill: #ffffff;
 }
 
+@media screen and (min-width: 1140px) {
+  .footer__form-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .footer__form-box input {
   margin-bottom: 20px;
+  margin-right: 12px;
   min-width: 358px;
 }
 
