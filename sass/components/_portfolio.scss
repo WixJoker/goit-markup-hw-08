@@ -1,11 +1,15 @@
 .portfolio__button-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  // justify-content: center;
+  margin-bottom: 40px;
 }
 .portfolio__button-list li:not(:last-child) {
   margin-right: 8px;
 }
+// .portfolio__button-list li:not(:last-child) {
+//   margin-right: 8px;
+// }
 .portfolio {
   @media screen and (min-width: $tablet) {
     display: flex;

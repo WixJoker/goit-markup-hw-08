@@ -1016,10 +1016,9 @@ section.our-team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .portfolio__button-list li:not(:last-child) {
@@ -1257,8 +1256,8 @@ footer {
 
 .footer__social-media-icons-link {
   background-color: rgba(255, 255, 255, 0.1);
-  width: 44px;
-  height: 44px;
+  width: 88px;
+  height: 88px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1278,8 +1277,8 @@ footer {
 }
 
 .footer__social-icon {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   fill: #ffffff;
 }
 
