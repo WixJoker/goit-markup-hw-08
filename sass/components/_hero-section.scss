@@ -1,6 +1,5 @@
 .hero {
   @media screen and (max-width: 479px) {
-    padding: 118px 60px;
     text-align: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.25)),
       url('../images/bg_hero_image-480.jpg');
@@ -38,7 +37,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    padding: 118px 60px;
+    padding: 118px 204px;
     text-align: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.25)),
       url('../images/bg_hero_image-1600.jpg');
@@ -56,16 +55,27 @@
     }
   }
 }
+.container__content {
+  width: 360px;
+  @media screen and (min-width: $desktop) {
+    width: 696px;
+  }
+}
 .hero__title {
   margin-bottom: 30px;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: $secondary-letter-spacing;
   text-transform: uppercase;
   color: $primary-background-color;
+
+  @media sceen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .button-container {
   justify-content: center;

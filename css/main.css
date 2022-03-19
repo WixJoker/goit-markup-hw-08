@@ -387,7 +387,6 @@ textarea:hover {
 
 @media screen and (max-width: 479px) {
   .hero {
-    padding: 118px 60px;
     text-align: center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.25))), url("../images/bg_hero_image-480.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.25)), url("../images/bg_hero_image-480.jpg");
@@ -421,7 +420,7 @@ textarea:hover {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 118px 60px;
+    padding: 118px 204px;
     text-align: center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.25))), url("../images/bg_hero_image-1600.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.25)), url("../images/bg_hero_image-1600.jpg");
@@ -437,15 +436,30 @@ textarea:hover {
   }
 }
 
+.container__content {
+  width: 360px;
+}
+@media screen and (min-width: 1140px) {
+  .container__content {
+    width: 696px;
+  }
+}
+
 .hero__title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media sceen and (min-width: 1140px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .button-container {
