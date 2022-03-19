@@ -37,9 +37,11 @@
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
+    padding: 48px 40px;
+    background-color: $primary-background-color;
 
     &.is-open {
       display: block;
@@ -105,18 +107,35 @@
   margin-right: 10px;
   fill: currentColor;
 }
+.header-link {
+  @media screen and (max-width: 767px) {
+    display: block;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}
 .header__link,
 .header__contacts {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $title-color;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $title-color;
 
-  transition: color 250ms $timing-function;
+    transition: color 250ms $timing-function;
+  }
 }
+
 .header__link--current {
   @media screen and (min-width: 768px) {
     position: relative;
