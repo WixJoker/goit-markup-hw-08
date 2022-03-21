@@ -37,7 +37,7 @@
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
     padding: 48px 40px;
@@ -47,10 +47,9 @@
       display: block;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
-    // flex-grow: 1;
     .header__links-list-item {
       display: inline-flex;
       justify-content: space-between;
@@ -67,38 +66,36 @@
   display: flex;
   justify-content: space-between;
 }
-// .menu-container__navigation {
-//   @media screen and (min-width: $tablet) {
-//     margin-right: 150px;
-//   }
-// }
-// .menu-container__contacts {
-//   @media screen and (min-width: 768px) {
-//     margin-right: 0;
-//   }
 .site-nav {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
 }
 .header__link--current {
   color: $accent-color;
 }
-.header-info {
-  @media screen and (min-width: $tablet) {
-    justify-content: flex-end;
-  }
-}
+// .header-info {
+//   @media screen and (min-width: $tablet) {
+//     justify-content: flex-end;
+//   }
+// }
 .header__links-list {
   @media screen and (min-width: $desktop) {
-    display: flex;
+    display: inline-flex;
+    justify-content: space-between;
     align-items: center;
   }
 }
-.header__links-list-item {
-  margin-right: 50px;
-
-  &:last-child {
-    margin-right: 0;
+.header__links-list-item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-right: 50px;
+  }
+}
+.header__links-list-item:last-child {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 302px;
   }
 }
 .smartphone-icon,
@@ -114,16 +111,12 @@
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.02em;
-
-    &:not(:last-child) {
-      margin-bottom: 32px;
-    }
   }
 }
 .header__link,
 .header__contacts {
   @media screen and (min-width: $tablet) {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     font-weight: 500;
     font-size: 14px;
@@ -134,7 +127,30 @@
     transition: color 250ms $timing-function;
   }
 }
+.header__contacts {
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $title-color;
 
+    &.email {
+      font-size: 24px;
+      line-height: 1.17;
+    }
+  }
+}
+
+.header__link {
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $title-color;
+  }
+}
 .header__link--current {
   @media screen and (min-width: 768px) {
     position: relative;
@@ -151,11 +167,20 @@
     }
   }
 }
-.header__links-list-item-contacts {
-  margin-right: 30px;
-
-  &:last-child {
-    margin-right: 0;
+.header__links-list-item-contacts:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1139px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 30px;
+  }
+}
+.header__links-list-item-contacts:last-child {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 64px;
   }
 }
 .header__contacts {
@@ -168,4 +193,36 @@
 .smartphone-icon {
   width: 10px;
   height: 16px;
+}
+.menu-container__social-links {
+  @media screen and (max-width: 767px) {
+    display: inline-flex;
+  }
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+.menu-container__social-link:not(:last-child) {
+  margin-right: 20px;
+  position: relative;
+  &::after {
+    display: flex;
+    top: 10px;
+    left: 60px;
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 0px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+}
+.menu-container__social-link a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+  cursor: pointer;
 }
