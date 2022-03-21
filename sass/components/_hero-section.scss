@@ -75,10 +75,13 @@
   text-transform: uppercase;
   color: $primary-background-color;
 
-  @media sceen and (min-width: $desktop) {
-    font-size: 44px;
-    line-height: 1.36;
-  }
+  // @media sceen and (min-width: $desktop) {
+  //   margin-right: auto;
+  //   margin-left: auto;
+  //   text-align: center;
+  //   font-size: 44px;
+  //   line-height: 1.36;
+  // }
 }
 .button-container {
   justify-content: center;
