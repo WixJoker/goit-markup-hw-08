@@ -1261,6 +1261,7 @@ section.our-team {
   border-bottom: 1px solid #eeeeee;
 }
 .portfolio__item:not(:last-child) {
+  z-index: -1;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) and (max-width: 1139px) {
@@ -1419,12 +1420,15 @@ footer {
 
 @media screen and (min-width: 768px) and (max-width: 1139px) {
   .footer__container {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1139px) and (min-width: 1140px) {
@@ -1488,10 +1492,18 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1139px) {
+  .footer__main-info {
+    position: absolute;
+    top: 60px;
+    left: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
   .footer__social-media-box {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    position: absolute;
+    top: 65px;
+    right: 90px;
   }
 }
 @media screen and (min-width: 1140px) {
@@ -1562,6 +1574,14 @@ footer {
   width: 20px;
   height: 20px;
   fill: #ffffff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .footer__form {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+  }
 }
 
 @media screen and (min-width: 1140px) {

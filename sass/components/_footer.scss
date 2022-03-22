@@ -13,8 +13,11 @@ footer {
 }
 .footer__container {
   @media screen and (min-width: $tablet) and (max-width: 1139px) {
+    position: relative;
     display: flex;
     align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
     @media screen and (min-width: $desktop) {
       justify-content: space-between;
     }
@@ -58,9 +61,18 @@ footer {
 .footer__contacts {
   color: rgba(255, 255, 255, 0.6);
 }
+.footer__main-info {
+  @media screen and (min-width: $tablet) and (max-width: 1139px) {
+    position: absolute;
+    top: 60px;
+    left: 80px;
+  }
+}
 .footer__social-media-box {
   @media screen and (min-width: $tablet) and (max-width: 1139px) {
-    justify-content: center;
+    position: absolute;
+    top: 65px;
+    right: 90px;
   }
   @media screen and (min-width: $desktop) {
     margin-right: 93px;
@@ -119,6 +131,13 @@ footer {
   width: 20px;
   height: 20px;
   fill: $primary-background-color;
+}
+.footer__form {
+  @media screen and (min-width: $tablet) and (max-width: 1139px) {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+  }
 }
 .footer__form-box {
   @media screen and (min-width: $desktop) {
