@@ -22,8 +22,9 @@
   background-color: transparent;
   cursor: pointer;
   position: absolute;
-  top: 0;
+  top: -5px;
   right: 10px;
+  z-index: 20;
 
   &:hover,
   &:focus {
@@ -46,7 +47,7 @@
 .menu-container {
   @media screen and (max-width: 767px) {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 100%;
     left: 0;
     width: 100%;
@@ -55,7 +56,12 @@
     background-color: $primary-background-color;
 
     &.is-open {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      top: 0;
+      left: 0;
+      z-index: 10;
     }
   }
   @media screen and (min-width: $tablet) {
@@ -93,14 +99,9 @@
   display: inline-flex;
   justify-content: space-between;
 }
-.header__link--current {
+.header__link.header__link--current {
   color: $accent-color;
 }
-// .header-info {
-//   @media screen and (min-width: $tablet) {
-//     justify-content: flex-end;
-//   }
-// }
 .header__links-list {
   @media screen and (min-width: $desktop) {
     display: inline-flex;
@@ -114,11 +115,6 @@
   }
   @media screen and (min-width: $tablet) {
     margin-right: 50px;
-  }
-}
-.header__links-list-item:last-child {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 302px;
   }
 }
 .smartphone-icon,
@@ -164,7 +160,6 @@
     }
   }
 }
-
 .header__link {
   @media screen and (max-width: 767px) {
     font-weight: 500;

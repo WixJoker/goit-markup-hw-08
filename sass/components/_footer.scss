@@ -12,6 +12,11 @@ footer {
   }
 }
 .footer__container {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   @media screen and (min-width: $tablet) and (max-width: 1139px) {
     position: relative;
     display: flex;
@@ -63,10 +68,12 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer__main-info {
+  min-width: 240px;
   @media screen and (min-width: $tablet) and (max-width: 1139px) {
     position: absolute;
     top: 60px;
     left: 80px;
+    text-align: center;
   }
 }
 .footer__social-media-box {
@@ -77,12 +84,6 @@ footer {
   }
   @media screen and (min-width: $desktop) {
     margin-right: 93px;
-  }
-}
-.footer__main-info {
-  min-width: 240px;
-  @media screen and (min-width: $tablet) and (max-width: 1139px) {
-    text-align: center;
   }
 }
 .footer__social-media-title,
@@ -120,8 +121,11 @@ footer {
   align-items: center;
 
   transition: background-color 250ms $timing-function;
+
   @media screen and (min-width: $desktop) {
     display: inline-flex;
+    width: 44px;
+    height: 44px;
   }
   &:hover,
   &:focus {
