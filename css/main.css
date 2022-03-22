@@ -223,7 +223,11 @@ textarea:hover {
   background-color: transparent;
   cursor: pointer;
   position: absolute;
-  top: 10px;
+  top: 0;
+  right: 10px;
+}
+.menu-button:hover, .menu-button:focus {
+  fill: #2196f3;
 }
 @media screen and (min-width: 768px) {
   .menu-button {
@@ -250,6 +254,7 @@ textarea:hover {
     top: 100%;
     left: 0;
     width: 100%;
+    height: 100vh;
     padding: 48px 40px;
     background-color: #ffffff;
   }
