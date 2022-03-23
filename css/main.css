@@ -517,6 +517,8 @@ textarea:hover {
 
 @media screen and (max-width: 479px) {
   .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.25))), url("../images/bg_hero_image-480.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.25)), url("../images/bg_hero_image-480.jpg");
@@ -533,6 +535,8 @@ textarea:hover {
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.25))), url("../images/bg_hero_image-768.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.25)), url("../images/bg_hero_image-768.jpg");
@@ -549,6 +553,8 @@ textarea:hover {
 }
 @media screen and (min-width: 768px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(0, 0, 0, 0.25))), url("../images/bg_hero_image-1600.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.25)), url("../images/bg_hero_image-1600.jpg");
@@ -565,19 +571,24 @@ textarea:hover {
 }
 
 .hero__title {
+  display: block;
   margin-bottom: 30px;
-  width: 360px;
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (max-width: 1139px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
 @media screen and (min-width: 1140px) {
   .hero__title {
-    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -1048,14 +1059,17 @@ section.our-team {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 0;
   }
 }
 
 .our-team__image {
   width: 100%;
 }
-.our-team__image:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .our-team__image:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1139px) {
   .our-team__image {

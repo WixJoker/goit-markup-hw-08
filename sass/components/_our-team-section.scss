@@ -30,16 +30,17 @@ section.our-team {
   @media screen and (min-width: $desktop) {
     & {
       display: flex;
+      margin-bottom: 0;
     }
   }
 }
 .our-team__image {
   width: 100%;
-
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
-
   @media screen and (min-width: $tablet) and (max-width: 1139px) {
     & {
       flex-basis: calc((100% - 2 * 30px) / 2);
