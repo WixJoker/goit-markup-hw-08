@@ -1546,28 +1546,10 @@ footer {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1139px) {
-  .footer__main-info {
-    margin-bottom: 0;
-    position: absolute;
-    top: 60px;
-    left: 80px;
-    text-align: center;
-  }
-}
 
 @media screen and (max-width: 767px) {
   .footer__social-media-box {
     margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1139px) {
-  .footer__social-media-box {
-    margin-right: 0;
-    margin-bottom: 0;
-    position: absolute;
-    top: 65px;
-    right: 90px;
   }
 }
 @media screen and (min-width: 1140px) {
@@ -1642,14 +1624,6 @@ footer {
   width: 20px;
   height: 20px;
   fill: #ffffff;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1139px) {
-  .footer__form {
-    position: absolute;
-    top: 250px;
-    right: 20%;
-  }
 }
 
 @media screen and (min-width: 1140px) {
