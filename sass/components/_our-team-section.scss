@@ -54,6 +54,9 @@ section.our-team {
     &:nth-child(2n + 1) {
       margin-right: 30px;
     }
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
   }
   @media screen and (min-width: $desktop) {
     // & {

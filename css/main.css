@@ -955,6 +955,7 @@ textarea:hover {
   .properties__item {
     -ms-flex-preferred-size: calc((100% - 120px) / 4);
         flex-basis: calc((100% - 120px) / 4);
+    margin-bottom: 0;
   }
   .properties__item:not(:last-child) {
     margin-right: 30px;
@@ -1084,6 +1085,9 @@ section.our-team {
   }
   .our-team__image:nth-child(2n+1) {
     margin-right: 30px;
+  }
+  .our-team__image:nth-child(-n+2) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1140px) {

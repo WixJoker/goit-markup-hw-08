@@ -54,6 +54,7 @@
   @media (min-width: $desktop) {
     & {
       flex-basis: calc((100% - 4 * 30px) / 4);
+      margin-bottom: 0;
     }
     &:not(:last-child) {
       margin-right: 30px;
