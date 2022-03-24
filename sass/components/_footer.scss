@@ -61,15 +61,16 @@ footer {
 .footer__info-item:not(:last-child) {
   margin-bottom: 10px;
 }
-.footer__info-item:last-child {
-  margin-bottom: 60px;
-}
 .footer__contacts {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer__main-info {
   min-width: 240px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: $tablet) and (max-width: 1139px) {
+    margin-bottom: 0;
     position: absolute;
     top: 60px;
     left: 80px;
@@ -77,7 +78,12 @@ footer {
   }
 }
 .footer__social-media-box {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: $tablet) and (max-width: 1139px) {
+    margin-right: 0;
+    margin-bottom: 0;
     position: absolute;
     top: 65px;
     right: 90px;
@@ -110,7 +116,6 @@ footer {
 }
 .footer__social-media-icons {
   display: inline-flex;
-  margin-bottom: 60px;
 }
 .footer__social-media-icons-link {
   background-color: rgba(255, 255, 255, 0.1);
