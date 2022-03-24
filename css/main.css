@@ -1476,6 +1476,9 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1498,9 +1501,6 @@ footer {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
@@ -1539,9 +1539,6 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer__main-info {
-  min-width: 240px;
-}
 @media screen and (max-width: 767px) {
   .footer__main-info {
     margin-bottom: 60px;
@@ -1550,17 +1547,28 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 1139px) {
   .footer__main-info {
     text-align: center;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: calc((100% - 330px) / 2);
+        flex-basis: calc((100% - 330px) / 2);
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-bottom: 60px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .footer__social-media-box {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .footer__social-media-box {
+    text-align: center;
+    -ms-flex-preferred-size: calc((100% - 330px) / 2);
+        flex-basis: calc((100% - 330px) / 2);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media screen and (min-width: 1140px) {
@@ -1635,26 +1643,19 @@ footer {
   fill: #ffffff;
 }
 
-@media screen and (min-width: 1140px) {
-  .footer__form-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-.footer__form-box input {
-  margin-bottom: 0;
-  margin-right: 12px;
-  min-width: 358px;
-}
 @media screen and (max-width: 1139px) {
   .footer__form-box input {
     min-width: 450px;
+    margin-bottom: 20px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
-@media screen and (max-width: 1139px) {
+@media screen and (min-width: 1140px) {
   .footer__form-box input {
-    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

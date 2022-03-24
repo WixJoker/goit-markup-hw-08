@@ -20,6 +20,7 @@ footer {
   @media screen and (min-width: $tablet) and (max-width: 1139px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: baseline;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -30,7 +31,6 @@ footer {
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
   }
 }
 .footer__logo-text {
@@ -64,19 +64,24 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer__main-info {
-  min-width: 240px;
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
   @media screen and (min-width: $tablet) and (max-width: 1139px) {
     text-align: center;
-    flex-basis: calc(100% / 2);
+    flex-basis: calc((100% - 2 * 165px) / 2);
     justify-content: space-between;
+    margin-bottom: 60px;
   }
 }
 .footer__social-media-box {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1139px) {
+    text-align: center;
+    flex-basis: calc((100% - 2 * 165px) / 2);
+    justify-content: space-between;
   }
   @media screen and (min-width: $desktop) {
     margin-right: 93px;
@@ -140,19 +145,15 @@ footer {
 //     right: 20%;
 //   }
 .footer__form-box {
-  @media screen and (min-width: $desktop) {
-    display: flex;
-  }
   & input {
     @media screen and (max-width: 1139px) {
       min-width: 450px;
-    }
-    @media screen and (max-width: 1139px) {
       margin-bottom: 20px;
+      flex-basis: calc((100% 1 * 165px) / 1);
     }
-    margin-bottom: 0;
-    margin-right: 12px;
-    min-width: 358px;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+    }
   }
 }
 .footer__submit-button {
