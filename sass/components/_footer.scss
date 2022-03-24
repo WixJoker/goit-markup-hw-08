@@ -18,12 +18,11 @@ footer {
     justify-content: space-between;
   }
   @media screen and (min-width: $tablet) and (max-width: 1139px) {
-    position: relative;
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     padding-top: 60px;
     padding-bottom: 60px;
-    height: 400px;
     @media screen and (min-width: $desktop) {
       justify-content: space-between;
     }
@@ -71,19 +70,14 @@ footer {
   }
   @media screen and (min-width: $tablet) and (max-width: 1139px) {
     text-align: center;
+    flex-basis: calc(100% / 2);
+    justify-content: space-between;
   }
 }
 .footer__social-media-box {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-  // @media screen and (min-width: $tablet) and (max-width: 1139px) {
-  //   margin-right: 0;
-  //   margin-bottom: 0;
-  //   position: absolute;
-  //   top: 65px;
-  //   right: 90px;
-  // }
   @media screen and (min-width: $desktop) {
     margin-right: 93px;
   }
@@ -125,8 +119,6 @@ footer {
 
   @media screen and (min-width: $desktop) {
     display: inline-flex;
-    width: 44px;
-    height: 44px;
   }
   &:hover,
   &:focus {
