@@ -222,7 +222,7 @@ textarea:hover {
   cursor: pointer;
   position: absolute;
   top: -5px;
-  right: 50px;
+  right: 25px;
   z-index: 20;
 }
 .menu-button:hover, .menu-button:focus {
@@ -234,16 +234,16 @@ textarea:hover {
   }
 }
 
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
 .menu-button .icon-close {
   display: none;
 }
 
 .menu-button.is-open .icon-close {
   display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -1545,6 +1545,11 @@ footer {
 @media screen and (max-width: 767px) {
   .footer__main-info {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .footer__main-info {
+    text-align: center;
   }
 }
 
