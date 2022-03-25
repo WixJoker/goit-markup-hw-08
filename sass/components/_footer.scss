@@ -138,18 +138,11 @@ footer {
   height: 20px;
   fill: $primary-background-color;
 }
-// .footer__form {
-//   @media screen and (min-width: $tablet) and (max-width: 1139px) {
-//     position: absolute;
-//     top: 250px;
-//     right: 20%;
-//   }
 .footer__form-box {
   & input {
     @media screen and (max-width: 1139px) {
       min-width: 450px;
       margin-bottom: 20px;
-      flex-basis: calc((100% 1 * 165px) / 1);
     }
     @media screen and (min-width: $desktop) {
       display: flex;

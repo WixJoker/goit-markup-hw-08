@@ -1647,8 +1647,6 @@ footer {
   .footer__form-box input {
     min-width: 450px;
     margin-bottom: 20px;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
   }
 }
 @media screen and (min-width: 1140px) {
