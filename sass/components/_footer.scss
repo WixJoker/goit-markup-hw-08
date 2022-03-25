@@ -144,6 +144,9 @@ footer {
       min-width: 450px;
       margin-bottom: 20px;
     }
+    @media screen and (min-width: $tablet) and (max-width: 1139px) {
+      align-content: center;
+    }
     @media screen and (min-width: $desktop) {
       display: flex;
     }

@@ -1649,6 +1649,12 @@ footer {
     margin-bottom: 20px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .footer__form-box input {
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
 @media screen and (min-width: 1140px) {
   .footer__form-box input {
     display: -webkit-box;
