@@ -1476,6 +1476,9 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-column-gap: 60px;
+       -moz-column-gap: 60px;
+            column-gap: 60px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1539,11 +1542,6 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 767px) {
-  .footer__main-info {
-    margin-bottom: 60px;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1139px) {
   .footer__main-info {
     text-align: center;
