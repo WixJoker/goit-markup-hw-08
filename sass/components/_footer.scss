@@ -21,7 +21,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     column-gap: 60px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -139,7 +139,7 @@ footer {
 .footer__form-box {
   & input {
     @media screen and (max-width: 1139px) {
-      min-width: 450px;
+      width: 450px;
       margin-bottom: 20px;
     }
     @media screen and (min-width: $tablet) and (max-width: 1139px) {
