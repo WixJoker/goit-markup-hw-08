@@ -21,7 +21,7 @@ section.our-team {
   background: $section-background-color;
 }
 .our-team__item {
-  @media screen and (min-width: $tablet) and (max-width: 1139px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     & {
       display: flex;
       flex-wrap: wrap;
@@ -41,7 +41,7 @@ section.our-team {
       margin-bottom: 30px;
     }
   }
-  @media screen and (min-width: $tablet) and (max-width: 1139px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     & {
       flex-basis: calc((100% - 2 * 30px) / 2);
     }

@@ -46,7 +46,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 
-  @media screen and (max-width: 1139px) {
+  @media screen and (max-width: 1199px) {
     left: 416px;
   }
 
@@ -175,7 +175,7 @@
   }
 }
 .modal__window-consent {
-  @media screen and (max-width: 1139px) {
+  @media screen and (max-width: 1199px) {
     font-size: 12px;
     line-height: 1.17;
   }

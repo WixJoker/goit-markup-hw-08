@@ -2,7 +2,7 @@
   display: inline-flex;
   flex-wrap: wrap;
 
-  @media screen and (min-width: $tablet) and (max-width: 1139px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: inline-flex;
     flex-wrap: wrap;
   }
@@ -28,7 +28,7 @@
         margin-bottom: 30px;
       }
     }
-    @media screen and (min-width: $tablet) and (max-width: 1139px) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       & {
         width: 226px;
         flex-basis: calc((100% - 3 * 30px) / 3);

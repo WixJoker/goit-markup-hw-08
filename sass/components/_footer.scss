@@ -17,7 +17,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
   }
-  @media screen and (min-width: $tablet) and (max-width: 1139px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     column-gap: 60px;
@@ -65,7 +65,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer__main-info {
-  @media screen and (min-width: $tablet) and (max-width: 1139px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     text-align: center;
     flex-basis: calc((100% - 2 * 165px) / 2);
     justify-content: space-between;
@@ -76,7 +76,7 @@ footer {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-  @media screen and (min-width: $tablet) and (max-width: 1139px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     text-align: center;
     flex-basis: calc((100% - 2 * 165px) / 2);
     justify-content: space-between;
@@ -98,12 +98,12 @@ footer {
   color: $primary-background-color;
   font-style: normal;
 
-  @media screen and (min-width: $tablet) and (max-width: 1139px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     text-align: center;
   }
 }
 .footer__social-media-box {
-  @media screen and (min-width: $tablet) and (max-width: 1139px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     text-align: center;
   }
 }
@@ -138,11 +138,11 @@ footer {
 }
 .footer__form-box {
   & input {
-    @media screen and (max-width: 1139px) {
+    @media screen and (max-width: 1199px) {
       width: 450px;
       margin-bottom: 20px;
     }
-    @media screen and (min-width: $tablet) and (max-width: 1139px) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       margin-right: auto;
       margin-left: auto;
     }
