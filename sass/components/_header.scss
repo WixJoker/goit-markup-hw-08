@@ -23,7 +23,7 @@
   cursor: pointer;
   position: absolute;
   top: -5px;
-  right: 25px;
+  right: -20px;
   z-index: 20;
 
   &:hover,
@@ -35,14 +35,6 @@
     display: none;
   }
 }
-// .icon-menu,
-// .menu-button.is-open .icon-close {
-//   display: block;
-// }
-// .icon-close,
-// .menu-button.is-open .icon-menu {
-//   display: none;
-// }
 .menu-button .icon-close {
   display: none;
 }
@@ -90,7 +82,7 @@
   @media screen and (min-width: $desktop) {
     position: absolute;
     top: 0;
-    right: 15px;
+    right: -15px;
   }
 }
 .header {
