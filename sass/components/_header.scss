@@ -35,14 +35,22 @@
     display: none;
   }
 }
-.menu-button.is-open .icon-menu {
-  display: none;
-}
+// .icon-menu,
+// .menu-button.is-open .icon-close {
+//   display: block;
+// }
+// .icon-close,
+// .menu-button.is-open .icon-menu {
+//   display: none;
+// }
 .menu-button .icon-close {
   display: none;
 }
 .menu-button.is-open .icon-close {
   display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 .menu-container {
   @media screen and (max-width: 767px) {

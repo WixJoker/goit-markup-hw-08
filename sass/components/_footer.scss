@@ -65,9 +65,6 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer__main-info {
-  // @media screen and (max-width: 767px) {
-  //   margin-bottom: 60px;
-  // }
   @media screen and (min-width: $tablet) and (max-width: 1139px) {
     text-align: center;
     flex-basis: calc((100% - 2 * 165px) / 2);

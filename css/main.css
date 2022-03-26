@@ -234,16 +234,16 @@ textarea:hover {
   }
 }
 
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
 .menu-button .icon-close {
   display: none;
 }
 
 .menu-button.is-open .icon-close {
   display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
