@@ -71,6 +71,9 @@ footer {
     justify-content: space-between;
     margin-bottom: 60px;
   }
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
 }
 .footer__social-media-box {
   @media screen and (max-width: 767px) {
@@ -106,6 +109,9 @@ footer {
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     text-align: center;
   }
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
 }
 .footer__social-media-icons {
   display: inline-flex;
@@ -137,6 +143,9 @@ footer {
   fill: $primary-background-color;
 }
 .footer__form-box {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
   & input {
     @media screen and (max-width: 1199px) {
       width: 450px;
@@ -147,7 +156,8 @@ footer {
       margin-left: auto;
     }
     @media screen and (min-width: $desktop) {
-      display: flex;
+      width: 270px;
+      margin-right: 12px;
     }
   }
 }

@@ -66,10 +66,10 @@
   }
   @media screen and (min-width: $tablet) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     .header__links-list-item {
       display: inline-flex;
-      justify-content: space-between;
+      justify-content: space-around;
     }
   }
 }
@@ -77,12 +77,12 @@
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     position: absolute;
     top: -10px;
-    right: 15px;
+    right: -60px;
   }
   @media screen and (min-width: $desktop) {
     position: absolute;
     top: 0;
-    right: -15px;
+    right: 0;
   }
 }
 .header {
