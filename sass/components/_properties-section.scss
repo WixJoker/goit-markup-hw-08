@@ -66,18 +66,14 @@
 .properties__title {
   margin-bottom: 10px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 700, 1.14);
   letter-spacing: inherit;
   text-transform: uppercase;
   color: $title-color;
 }
 .properties__text {
   display: block;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(14px, 400, 1.71);
   letter-spacing: inherit;
   color: inherit;
 }
